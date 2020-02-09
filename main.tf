@@ -5,7 +5,7 @@ provider "aws" {
 
 
 resource "aws_key_pair" "default" {
-  key_name = "mumbai"
+  key_name = "instancekey"
   public_key = "${file("${var.key_path}")}"
 }
 
